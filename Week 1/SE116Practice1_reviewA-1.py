@@ -26,8 +26,9 @@ def again(): #<--FUNCTION HEADER
         print("***INVALID ENTRY!***\tPlease answer either 'y' or 'n'.")
         ans = input("\t\tWould you like to enter another temperature? [y/n]: ").lower()
 
-    return ans #this value will replace the function call in the main code
     print("see you space cowboy!")
+    return ans #this value will replace the function call in the main code
+
 def converter(f):
     #'f' is a parameter
     '''this function is passed an argument value of 'f' (a tempF), converts to tempC, and then returns the conversion value'''
@@ -59,7 +60,7 @@ while (answer == "y" or answer == "Y"):
     print(f"\n\t\tTEMP# {temp_count}\tTEMP {tempF:.1f}F = TEMP {tempC:.1f}C\n")
 
     #loop control! allowing a way back in or out of the loop based on the value of answer
-    answer = again() #return value will replce this function call and store to 'answer'
+    answer = again() #return value will replace this function call and store to 'answer'
 
 #out of loop
 
@@ -72,7 +73,7 @@ avg_tempC = converter(avg_tempF)
 #final displays
 print("\n\t\tHere is your final session information: ")
 print("\t\tTOTAL TEMPS ENTERED: {0}".format(temp_count))
-print("\t\tAVGERAGE TEMP {0:.1f}F  |  {1:.1f}C".format(avg_tempF, avg_tempC))
+print("\t\tAVERAGE TEMP {0:.1f}F  |  {1:.1f}C".format(avg_tempF, avg_tempC))
 
 print("\n\n\t\tThank you for using the program. Goodbye.\n\n")
 
