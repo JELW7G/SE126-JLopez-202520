@@ -83,7 +83,7 @@ else:
 
 #WRITE SOME DATA TO A NEW FILE
 #create and write dragons and riders of the data to a new text file:
-file = open('class_demos/week4/targs.csv', 'w')
+file = open('Week_4/W4D2_Demo/targs.csv', 'w')
 
 for i in range(0, len(dragons)):
     file.write(f"{dragons[i]},{riders[i]}\n")

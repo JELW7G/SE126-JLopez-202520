@@ -117,7 +117,7 @@ while answer == "y":
         #get search item from user 
         search_grade = input("Enter the LETTER GRADE of the students you are searching for: ")
 
-        #perform search 
+        #perform search
         for i in range(0 , len(let_avg)):
             #the FOR LOOP allows for the "sequence" part -> from beginning to end
             if search_grade.upper() == let_avg[i]:
